@@ -27,13 +27,13 @@ public class Transaction implements Serializable {
     @Column(name = "SENDMONEY")
     private Integer amountOfMoneyToSend;
 
-    @Column(name = "DESC")
+    @Column(name = "DESCRIPTION")
     private String description;
 
-    @Column(name = "IS_SUCCESS")
+    @Column(name = "ISSUCCESS")
     private Boolean isSuccess;
 
-    @Column(name = "DATE")
+    @Column(name = "TRANSDATE")
     private Date date;
 
     public Long getTransactionId() {

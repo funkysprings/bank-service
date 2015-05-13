@@ -24,7 +24,7 @@ public class Client implements Serializable {
     @Column(name = "LNAME")
     private String lastName;
 
-    @Column(name = "ADRESS")
+    @Column(name = "ADDRESS")
     private String address;
 
     @Column(name = "AGE")

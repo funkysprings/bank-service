@@ -1,5 +1,4 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:tx="http://www.springframework.org/schema/tx"
@@ -32,8 +31,8 @@
 
     <bean id="viewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView"/>
-        <!--<property name="suffix" value=".jsp"/>-->
-        <!--<property name="prefix" value="view"/>-->
+        <property name="suffix" value=".jsp"/>
+        <property name="prefix" value="view"/>
     </bean>
 
     <tx:annotation-driven transaction-manager="transactionManager"/>

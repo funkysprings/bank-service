@@ -1,0 +1,7 @@
+.idea/
+lib/
+out/
+target/
+
+syntax:glob
+*.iml 
